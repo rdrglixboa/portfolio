@@ -39,6 +39,10 @@ img {
   --fonte-secundaria: "Amatic SC", sans-serif;
 }
 
+body {
+  background-color: var(--cor-primaria);
+}
+
 /* Header */
 
 .header__menu {
@@ -47,12 +51,58 @@ img {
 
 .header__menu ul {
   font-family: var(--fonte-secundaria);
-  font-size: 24px;
-  padding: 24px;
   display: flex;
   flex-wrap: wrap;
   color: #fff;
   justify-content: space-between;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+.header__menu li {
+  font-size: 24px;
+  padding: 24px;
 }
 
 /* Main */
+
+.subtitulos {
+  background-color: var(--cor-primaria);
+}
+
+.subtitulos ul {
+  font-family: var(--fonte-secundaria);
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 320px;
+  margin-right: 320px;
+}
+
+.subtitulos li {
+  font-size: 16px;
+  padding: 14px;
+}
+
+/* ADICIONAR DETALHE */
+
+.main__container {
+  background-color: var(--cor-primaria);
+  color: #fff;
+  display: grid;
+  grid-template-columns: minmax(30%, 500px) minmax(30%, 500px);
+  justify-content: center;
+  margin-top: 60px;
+  gap: 80px;
+  margin-bottom: 120px;
+}
+
+.foto__container h1 {
+  padding: 300px 200px;
+  background-color: red;
+}
+
+.main__text {
+  font-family: var(--fonte-primaria);
+  font-size: 24px;
+}
