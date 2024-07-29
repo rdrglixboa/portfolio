@@ -182,6 +182,7 @@ section h1 {
 
 /* HARDSKILLS */
 
+/*  CÓDIGO ANTIGO
 .hardskills__bg {
   background-color: var(--cor-secundaria);
   padding-top: 60px;
@@ -194,7 +195,7 @@ section h1 {
   display: grid;
   grid-template-columns: minmax(20%, 470px) minmax(20%, 470px);
   justify-content: center;
-  column-gap: 120px;
+
   row-gap: 60px;
   margin-top: 48px;
   background-color: var(--cor-primaria);
@@ -216,11 +217,68 @@ section h1 {
 }
 
 .hardskill__icones {
-  /* display: flex;
-  flex-wrap: wrap; */
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hardskill__icones li {
+  background-color: #fff;
+}
+
+.hardskills__container p {
+  background-color: #d80909;
+  font-size: 24px;
+} 
+
+/* HARDSKILLS 2 */
+
+/* .hardskills__container {
+  display: grid;
+  grid-template-columns: minmax(20%, 470px) minmax(20%, 470px);
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+} */
+
+.hardskills__bg {
+  background-color: var(--cor-secundaria);
+  padding-top: 60px;
+  padding-bottom: 80px;
+  padding-left: 240px;
+  padding-right: 240px;
+}
+
+.hardskills__container {
+  display: grid;
+  grid-template-columns: minmax(20%, 470px) minmax(20%, 470px);
+  justify-content: center;
+  column-gap: 120px;
+  row-gap: 60px;
+  margin-top: 48px;
+}
+
+.hardskills__item {
+  background-color: var(--cor-primaria);
+  grid-column: 1/-1;
   text-align: center;
+}
+
+.hardskills__item__ativo {
+  background-color: #e5d4ff;
+}
+
+.hardskills__icones ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.hardskills__icones li {
+  padding: 10px;
 }
 
 /* SOFTSKILLS */
