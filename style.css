@@ -109,10 +109,15 @@ body {
 
 /* PROJETOS */
 
+.projetos {
+  background-color: var(--cor-secundaria);
+}
+
 .projetos h1 {
   background-color: var(--cor-secundaria);
   font-family: var(--fonte-secundaria);
   text-align: center;
+  padding-top: 60px;
   font-size: 128px;
   font-weight: 400;
 }
@@ -229,21 +234,64 @@ body {
 } */
 
 .projetos__item__container {
+  background-color: var(--cor-secundaria);
   display: grid;
   grid-template-columns: minmax(20%, 470px) minmax(20%, 470px) minmax(
       20%,
       470px
     );
   justify-content: center;
+  text-align: center;
   gap: 30px;
   margin-top: 48px;
   margin-bottom: 120px;
 }
 
+.projetos__item__container h2 {
+  background-color: var(--cor-terciaria);
+  font-family: var(--fonte-secundaria);
+  left: 0px;
+  /* ajustar o left depois para alinhar ao centro */
+  font-weight: 400;
+  padding: 0px 32px 0px 32px;
+  border-radius: 10px 10px 0 0;
+  font-size: 36px;
+  color: #000;
+  display: inline;
+}
+
 .projetos__item {
-  padding: 110px 70px;
+  /* padding: 110px 70px;
   justify-content: center;
-  background-color: rgb(16, 6, 73);
+  background-color: rgb(16, 6, 73); */
+  background-color: var(--cor-primaria);
+  padding: 20px 20px 20px 20px;
+  border-radius: 12px;
+  margin-bottom: 120px;
+}
+
+.projetos__item ul {
+  text-align: start;
+}
+.projetos__item li {
+  font-family: var(--fonte-secundaria);
+  background-color: var(--cor-terciaria);
+  color: #000;
+  font-size: 28px;
+
+  margin-top: 8px;
+  margin-right: 12px;
+  padding: 5px 40px 5px 5px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  /* Alinha os itens dentro de li ao centro?? */
+}
+
+.projetos__item img {
+  border-radius: 4px;
+  height: 250px;
+  object-fit: cover;
 }
 
 /* SERVICOS */
