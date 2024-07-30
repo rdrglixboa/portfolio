@@ -125,10 +125,27 @@ section h1 {
 }
 
 .projetos__item__grande {
-  padding: 140px;
+  padding: 0px;
   justify-content: center;
   background-color: rgb(16, 6, 73);
 }
+
+/* PAREI AQUI */
+.projetos__item__grande h2 {
+  background-color: var(--cor-terciaria);
+  display: inline;
+  text-align: center;
+}
+
+.projetos__item__grande img {
+  border: 10px solid red;
+  border-bottom: 60px solid red;
+  border-radius: 12px;
+}
+
+/* .projetos__item__grande:first-child {
+  background-image: url(./assets/imgs/thumbs/bikcraft\ thumb.png);
+} */
 
 .projetos__item__container {
   display: grid;
