@@ -109,7 +109,8 @@ body {
 
 /* PROJETOS */
 
-section h1 {
+.projetos h1 {
+  background-color: var(--cor-secundaria);
   font-family: var(--fonte-secundaria);
   text-align: center;
   font-size: 128px;
@@ -117,22 +118,24 @@ section h1 {
 }
 
 .projetos__container {
+  background-color: var(--cor-secundaria);
+
   display: grid;
   grid-template-columns: minmax(20%, 470px) minmax(20%, 470px);
   justify-content: center;
   /* Justify content faz a grid ficar alinhada ao centro */
   text-align: center;
   gap: 60px;
-  margin-top: 60px;
+  padding-top: 60px;
 }
 
+/* deletavel */
 .projetos__item__grande {
   padding: 0px;
   justify-content: center;
 }
 
-/* PAREI AQUI */
-.projetos__item__grande h2 {
+.projetos__container h2 {
   background-color: var(--cor-terciaria);
   font-family: var(--fonte-secundaria);
   left: 0px;
@@ -146,13 +149,22 @@ section h1 {
 }
 
 .projetos__item__grande {
-  padding: 20px 20px 60px 20px;
-  background-color: #4f0fcf;
+  background-color: var(--cor-primaria);
+  padding: 20px 20px 20px 20px;
+  border-radius: 12px;
   /* BORDAS 
   border: 10px solid rgb(56, 85, 247);
   border-bottom: 60px solid rgb(56, 85, 247);
   border-radius: 12px; */
 }
+
+/* borda projeto variação 
+.projetos__item__grande img {
+  background-color: var(--cor-secundaria);
+  padding: 8px;
+  border-radius: 12px;
+} */
+
 .projetos__item__grande ul {
   text-align: start;
 }
@@ -228,6 +240,14 @@ section h1 {
 }
 
 /* SERVICOS */
+
+.servicos h1 {
+  background-color: var(--cor-primaria);
+  font-family: var(--fonte-secundaria);
+  text-align: center;
+  font-size: 128px;
+  font-weight: 400;
+}
 
 .servicos__container {
   display: grid;
@@ -322,6 +342,14 @@ section h1 {
   padding: 20px;
 } */
 
+.hardskills h1 {
+  background-color: var(--cor-primaria);
+  font-family: var(--fonte-secundaria);
+  text-align: center;
+  font-size: 128px;
+  font-weight: 400;
+}
+
 .hardskills__bg {
   background-color: var(--cor-secundaria);
   padding-top: 60px;
@@ -381,6 +409,14 @@ section h1 {
 }
 
 /* SOFTSKILLS */
+
+.softskills h1 {
+  background-color: var(--cor-primaria);
+  font-family: var(--fonte-secundaria);
+  text-align: center;
+  font-size: 128px;
+  font-weight: 400;
+}
 
 .softskills__container {
   display: grid;
