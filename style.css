@@ -120,6 +120,8 @@ section h1 {
   display: grid;
   grid-template-columns: minmax(20%, 470px) minmax(20%, 470px);
   justify-content: center;
+  /* Justify content faz a grid ficar alinhada ao centro */
+  text-align: center;
   gap: 60px;
   margin-top: 60px;
 }
@@ -127,20 +129,80 @@ section h1 {
 .projetos__item__grande {
   padding: 0px;
   justify-content: center;
-  background-color: rgb(16, 6, 73);
 }
 
 /* PAREI AQUI */
 .projetos__item__grande h2 {
   background-color: var(--cor-terciaria);
+  font-family: var(--fonte-secundaria);
+  left: 0px;
+  /* ajustar o left depois para alinhar ao centro */
+  font-weight: 400;
+  padding: 0px 32px 0px 32px;
+  border-radius: 10px 10px 0 0;
+  font-size: 36px;
+  color: #000;
   display: inline;
-  text-align: center;
 }
 
-.projetos__item__grande img {
-  border: 10px solid red;
-  border-bottom: 60px solid red;
-  border-radius: 12px;
+.projetos__item__grande {
+  padding: 20px 20px 60px 20px;
+  background-color: #4f0fcf;
+  /* BORDAS 
+  border: 10px solid rgb(56, 85, 247);
+  border-bottom: 60px solid rgb(56, 85, 247);
+  border-radius: 12px; */
+}
+.projetos__item__grande ul {
+  text-align: start;
+}
+.projetos__item__grande li {
+  font-family: var(--fonte-secundaria);
+  background-color: var(--cor-terciaria);
+  color: #000;
+  font-size: 28px;
+
+  margin-top: 8px;
+  margin-right: 12px;
+  padding: 5px 40px 5px 5px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  /* Alinha os itens dentro de li ao centro?? */
+}
+
+/* .projetos__item__grande li::before  */
+.detalhe__javascript {
+  content: "";
+  background-color: #ffdd00;
+  display: inline-block;
+
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  margin-right: 6px;
+}
+
+.detalhe__html {
+  content: "";
+  background-color: #ee5500;
+  display: inline-block;
+
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  margin-right: 6px;
+}
+
+.detalhe__css {
+  content: "";
+  background-color: #11bbee;
+  display: inline-block;
+
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  margin-right: 6px;
 }
 
 /* .projetos__item__grande:first-child {
