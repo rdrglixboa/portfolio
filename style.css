@@ -100,16 +100,32 @@ body {
   background-color: var(--cor-primaria);
   color: #fff;
   display: grid;
-  grid-template-columns: minmax(30%, 500px) minmax(30%, 500px);
+  grid-template-columns: minmax(20%, 400px) minmax(30%, 400px);
+  /* grid-template-columns: 1fr 1fr; EXCLUIR DEPOIS */
+
   justify-content: center;
   margin-top: 60px;
-  gap: 80px;
   margin-bottom: 120px;
+  gap: 60px;
 }
 
 .foto__container h1 {
-  padding: 300px 200px;
-  background-color: red;
+  font-family: var(--fonte-secundaria);
+  font-weight: 400;
+  font-size: 64px;
+  text-align: center;
+  display: block;
+  background-color: #fff;
+  color: #000;
+}
+
+.foto {
+  max-width: 100%;
+  background-color: #fff;
+  padding: 0px 0px 68px 0px;
+  border-right: 16px solid #fff;
+  border-left: 16px solid #fff;
+  box-sizing: border-box;
 }
 
 .main__text {
