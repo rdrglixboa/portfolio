@@ -107,12 +107,14 @@ body {
   margin-top: 60px;
   margin-bottom: 120px;
   gap: 60px;
+  position: relative;
 }
 
 .foto__container h1 {
   font-family: var(--fonte-secundaria);
   font-weight: 400;
   font-size: 64px;
+
   text-align: center;
   display: block;
   background-color: #fff;
@@ -122,10 +124,34 @@ body {
 .foto {
   max-width: 100%;
   background-color: #fff;
-  padding: 0px 0px 68px 0px;
+  padding: 0px 16px 0px 16px;
+  /* padding: 0px 0px 68px 0px;
   border-right: 16px solid #fff;
-  border-left: 16px solid #fff;
+  border-left: 16px solid #fff; */
   box-sizing: border-box;
+}
+
+/* .icones__contato li {
+  position: absolute;
+  justify-content: center;
+  display: inline-block;
+  flex-wrap: wrap;
+
+  /* position: absolute; */
+
+.icones__contato ul {
+  background-color: #fff;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 38px;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+
+.icones__contato li {
+  padding: 4px;
 }
 
 .main__text {
@@ -248,6 +274,62 @@ body {
 }
 
 .image-container .overlay button:hover {
+  color: #fff;
+  background-color: var(--cor-primaria);
+}
+
+/* image container pequeno */
+
+.image-container_pequeno {
+  position: relative;
+  height: 250px; /* Ajuste conforme necessário */
+  overflow: hidden;
+  /* transition: opacity 0.3s ease; */
+  /* object-fit: cover; */
+  border-radius: 4px;
+}
+.item-container_pequeno img {
+  /* width: 100%;
+  height: 100%; */
+
+  transition: opacity 0.3s ease;
+}
+
+.image-container_pequeno .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3 ease;
+}
+
+.image-container_pequeno:hover .overlay {
+  opacity: 1;
+}
+
+.image-container_pequeno:hover img {
+  opacity: 0.7;
+}
+
+.image-container_pequeno .overlay button {
+  background-color: var(--cor-terciaria);
+  font-family: var(--fonte-secundaria);
+  color: #000;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 8px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.image-container_pequeno .overlay button:hover {
   color: #fff;
   background-color: var(--cor-primaria);
 }
