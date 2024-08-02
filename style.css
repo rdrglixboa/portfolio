@@ -590,7 +590,7 @@ body {
   margin-bottom: 80px;
 }
 
-.hardskills__item__ativo h2 {
+.hardskills__item h2 {
   font-family: var(--fonte-secundaria);
   background-color: var(--cor-primaria);
   font-weight: lighter;
@@ -620,6 +620,19 @@ body {
   margin-bottom: 120px;
 }
 
+.hardskills__item section {
+  display: none;
+}
+
+.hardskills__item section.ativo {
+  display: block !important;
+  /* animation: show 0.5s forwards; */
+}
+
+.hardskills__icones .ativo{
+  background-color: var(--cor-secundaria)
+}
+
 .hardskills__texto section {
   display: none;
 }
@@ -639,7 +652,6 @@ body {
     transform: translate3d(0, 0, 0);
   }
 }
-
 
 /* SOFTSKILLS */
 
