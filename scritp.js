@@ -1,13 +1,17 @@
 const hardskillTitulo = document.getElementById("hardskill-titulo");
-const hardskillIcone = document.querySelectorAll("#hardskill-icone");
-const hardskillTexto = document.getElementById("hardskill-texto");
+const hardskillIcone = document.querySelectorAll(".hardskills__icones ul li");
+const hardskillTexto = document.querySelectorAll(".hardskills__texto section");
 
 console.log(hardskillIcone);
+console.log(hardskillTexto);
 
-hardskillIcone[0].classList.add("ativo");
+hardskillTexto[0].classList.add("ativo");
 
-function activeTab() {
-  console.log("icone clicado");
+function activeTab(index) {
+  hardskillTexto.forEach((section) => {
+    section.classList.remove("ativo");
+  });
+  hardskillTexto[index].classList.add("ativo");
 }
 
 hardskillIcone.forEach((icone, index) => {
@@ -16,17 +20,3 @@ hardskillIcone.forEach((icone, index) => {
   });
 });
 
-// function activeTab(index) {
-//   tabContent.forEach((icone) => {
-//     icone.classList.remove("ativo");
-//   });
-//   tabContent[index].classList.add("ativo");
-// }
-
-// hardskillIcone.forEach((icone) => {
-//   icone.addEventListener("click", () => {
-//     activeTab(index);
-//   });
-// });
-
-// activeTab();
